@@ -17,7 +17,9 @@ const UserSchema = new Schema(
     },
     passwordOtp: {
       type: Number,
-      maxlength: 6,
+      validate: {
+      validator: Number.isInteger,
+    },
     },
     passwordOtpExpire: {
       type: Date,
