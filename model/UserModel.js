@@ -16,10 +16,7 @@ const UserSchema = new Schema(
       require: true,
     },
     passwordOtp: {
-      type: Number,
-      validate: {
-      validator: Number.isInteger,
-    },
+      type: String,
     },
     passwordOtpExpire: {
       type: Date,
